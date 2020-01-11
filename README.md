@@ -1,6 +1,9 @@
-# react-editor-js
-
-[![npm version](https://badge.fury.io/js/react-editor-js.svg)](https://badge.fury.io/js/react-editor-js)
+<div align="center">
+  ![logo](/.github/public/react-editor-js.png)
+  <div>
+    [![npm version](https://badge.fury.io/js/react-editor-js.svg)](https://badge.fury.io/js/react-editor-js)
+  </div>
+</div>
 
 The unofficial [editor-js](https://editorjs.io/) component for React
 
