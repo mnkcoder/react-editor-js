@@ -9,11 +9,13 @@ export interface EditorJsProps {
 
   instanceRef?: (instance: EditorJS) => void
 
-  onChange?: (api: API, data?: OutputData) => void
+  onChange?: (api: API, data?: OutputData, index?: number) => void
   onCompareBlocks?: (
     newBlocks: BlockToolData | undefined,
     oldBlocks: BlockToolData | undefined
   ) => boolean
+
+  index?: number
 }
 
 export type Props = Readonly<EditorJS.EditorConfig> & Readonly<EditorJsProps>
@@ -51,7 +53,7 @@ class EditorJsContainer extends React.PureComponent<Props> {
       return
     }
 
-    onChange(api, newData)
+    onChange(api, newData, this.props.index)
   }
 
   initEditor() {
